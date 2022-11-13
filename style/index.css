@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: rgb(237, 242, 245);
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    width: 20%;
+}
+.box2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    width: 20%;
+}
+.box3{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    width: 20%;
+}
+fieldset{
+    border: 3px solid rgb(250, 37, 9);
+}
+legend{
+    border: 1px solid rgb(250, 37, 9);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(250, 37, 9);
+    border-radius: 5px;
+}
+.inputbox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.labelInput{
+    position: relative;
+    top: -20px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~.labelInput,
+.inputUser:valid ~.labelInput{
+    top: -40px;
+    font-size: 12px;
+    color: rgb(250, 37, 9);
+}
+#data{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(248, 78, 78),rgb(250, 37, 9));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit2{
+    background-image: linear-gradient(to right, rgb(248, 78, 78),rgb(250, 37, 9));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(138, 19, 4));
+
+}
+#submit2:hover{
+    background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(138, 19, 4));
+
+}

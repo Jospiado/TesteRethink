@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulário Detran</title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="box">
+        <form id="cad-usuario-form" action="">
+            <fieldset>
+                <legend><b>Formulário Detran</b></legend>
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome: </label>
+                </div>
+
+                <br>
+
+                <div class="inputBox">
+                    <input type="number" name="idade" id="idade" class="inputUser" required>
+                    <label for="idade" class="labelInput">Idade: </label>
+                </div>
+                
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="prof" id="prof" class="inputUser" required>
+                    <label for="prof" class="labelInput">Profissão: </label>
+                </div>
+
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email: </label>
+                </div>
+
+                <br>
+
+                <div class="inputBox">
+                    <input type="tel" name="tel" id="tel" class="inputUser" required>
+                    <label for="tel" class="labelInput">Telefone: </label>
+                </div>
+
+                <br>
+                <label for="data" class="labelInput">Data Preenchimento: </label>
+                <input type="date" name="data" id="data" required>
+                
+                <input type="submit" name="submit" id="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="box2">
+        <br>
+        <div class="inputBox">
+            <input type="text" name="procura" id="procura" class="inputUser" required>
+            <label for="procura" class="labelInput">Digite um nome para buscar: </label>
+        </div>
+
+        <button id="submit2" onclick="showItemsSelected()">Buscar Usuário Digitado</button>
+        <br><br>
+        <button id="submit2" onclick="showItemsAll()">Mostrar Todos Usuarios</button>
+        <br><br>
+        <button id="submit2" onclick="InsertIdArray()">Inserir Id no Array</button>
+        <br><br>
+        <button id="submit2" onclick="RightAge()">Mostrar Maiores de 18</button>
+        <br><br>
+        <button id="submit2" onclick="AverageAge()">Mostrar Media de Idade</button>
+        
+    </div>
+
+    <div class="box3">
+        <br>
+        <div class="inputBox">
+            <label for="procura" class="labelInput"><legend><b>Resultados</b></legend></label>
+            <div id="resultados">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>
